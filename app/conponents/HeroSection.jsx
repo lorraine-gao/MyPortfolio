@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
         <div className="col-span-6 lg:col-span-7 place-self-center grid gap-4">
-          <div className="text-white text-4xl lg:text-6xl font-extrabold">
+          <div className="text-white text-6xl lg:text-7xl font-extrabold">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I'm{" "}</span>
             <TypeAnimation
               sequence={[
@@ -20,7 +20,8 @@ const HeroSection = () => {
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 'web developer',
                 1000,
-                'full-stack developer',
+                'mobile developer',
+                1000
               ]}
               wrapper="span"
               speed={50}
@@ -38,7 +39,7 @@ const HeroSection = () => {
                       link.click();
                       document.body.removeChild(link);
                     }}
-            className="flex items-center rounded-full hover:bg-slate-200 text-white font-bold mt-3 px-6 py-3 mr-4 sm:mr-18 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 ">
+            className="flex items-center rounded-full hover:bg-slate-200 text-white font-bold mt-3 px-6 py-3 mr-4 sm:mr-18 w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 ">
               Resume <ArrowDownTrayIcon className="w-4 h-4 ml-1" />
             </button>
             {/* <button className="rounded-full hover:bg-slate-800 text-white border border-white mt-3 px-6 py-3 mr-4 sm:mr-18 w-full sm:w-fit">Contact me</button> */}
