@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 const HeroSection = () => {
   return (
@@ -17,19 +18,29 @@ const HeroSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 'Lorraine',
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                'software developer',
+                'web developer',
                 1000,
+                'full-stack developer',
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: '2em', display: 'inline-block' }}
               repeat={Infinity}
             />
           </div>
           <p className="text-[#ADB7BE] text-base lg:text-xl">As a full-stack developer, I’m passionate about turning ideas into real applications.</p>
           <p className="text-[#ADB7BE] text-base lg:text-xl">Check out my latest projects to see what I’ve been building.</p>
           <div>
-            <button className="rounded-full bg-white hover:bg-slate-200 text-white mt-3 px-6 py-3 mr-4 sm:mr-18 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 ">Download Resume</button>
+            <button onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = "/fs_resume.pdf";
+                      link.download = "fs_resume.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+            className="flex items-center rounded-full hover:bg-slate-200 text-white font-bold mt-3 px-6 py-3 mr-4 sm:mr-18 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 ">
+              Resume <ArrowDownTrayIcon className="w-4 h-4 ml-1" />
+            </button>
             {/* <button className="rounded-full hover:bg-slate-800 text-white border border-white mt-3 px-6 py-3 mr-4 sm:mr-18 w-full sm:w-fit">Contact me</button> */}
           </div>
         </div>
