@@ -5,7 +5,7 @@ import Link from 'next/link'
 const ProjectCard = ({imgUrl,title,description}) => {
   return (
     <div className='col-span-12 sm:col-span-6 lg:col-span-4'>
-      <div className='h-22 w-90 md:h-65 rounded-t-xl relative group' style={{background:`url(${imgUrl})`, backgroundSize: "cover"}}>
+      <div className='h-22 w-90 md:h-65 rounded-t-xl relative group ' style={{background:`url(${imgUrl})`, backgroundSize: "cover",backgroundPosition: 'center'}}>
       <div className='overlay rounded-t-xl absolute top-0 left-0 w-full h-full bg-[#181818]/50 hidden group-hover:flex items-center justify-center group-hover:bg-[#181818]/30'>
         <Link href="/" className='h-10 w-10'>
           <EyeIcon className='h-10 w-10 place-self-center'/>

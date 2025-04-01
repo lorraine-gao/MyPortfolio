@@ -55,7 +55,7 @@ const AboutSection = () => {
 
         <div className="lg:col-span-7 lg:order-2 order-1 col-span-1 lg:mr-20 grid gap-4 ">
           <p className='text-4xl'>About me</p>
-          <p className='text-base'>I'm a Graduate Software Engineer with a Master’s degree in IT with Excellence from UNSW, currently looking for software developer opportunities in Sydney.</p>
+          <p className='text-base'>I'm a Junior Software Engineer with a Master’s degree in IT with Excellence from UNSW, currently looking for software developer opportunities in Sydney.</p>
           <p className='text-base'>I love building things that work. I have experience developing web applications using C# and .NET Core, designing RESTful APIs, and working with PostgreSQL databases. On the front end, I enjoy working with React and TypeScript. Along the way, I’ve also mentored students in programming, helping them debug tricky code.</p>
           <p className='text-4xl mt-5'>Skills</p>
           <div className='flex flex-row gap-4 '>

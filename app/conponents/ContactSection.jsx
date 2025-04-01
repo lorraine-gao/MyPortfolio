@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import Modal from './Modal';
+// import Modal from './Modal';
 
 
 const ContactSection = () => {

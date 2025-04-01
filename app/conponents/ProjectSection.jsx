@@ -4,15 +4,15 @@ import ProjectCard from './ProjectCard'
 const projectsData = [
   {
     id:1,
-    title:"React Protfolio website",
+    title:"Personal Portfolio",
     description:"project1",
     image:"/projects/1.png"
   },
   {
     id:2,
-    title:"React Protfolio website",
-    description:"project1",
-    image:"/projects/1.png"
+    title:"Airbnb Clone Web App",
+    description:"Developed an Airbnb-style web app",
+    image:"/projects/2.png"
   },
   {
     id:3,
