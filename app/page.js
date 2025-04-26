@@ -7,9 +7,9 @@ import NavSection from "./conponents/NavSection";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col container w-full place-self-center mt-15 lg:mt-0 ">
+    <div className="flex min-h-screen flex-col w-full max-w-screen-xl mx-auto mt-0">
       <NavSection/>
-      <div className="mx-6 py-2">
+      <div className="mx-12 lg:mx-6 py-2">
         <HeroSection/>
         <AboutSection/>
         <ProjectSection/>
