@@ -24,19 +24,23 @@ const NavSection = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] border border-[#121212] w-full">
-      <div className="mx-auto flex items-center justify-center px-4 py-2">
-        <div className="menu hidden md:block md:w-auto">
-          <ul className="flex p-4 md:p-2 md:flex md:gap-10 md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
-              </li>
-            ))}
-          </ul>
+    <nav className="fixed top-3 left-0 right-0 z-10">
+      <div className="mx-auto flex justify-center px-4 py-4 ">
+        <div className="flex items-center gap-2 lg:gap-8 bg-[#121212] border border-gray-700 rounded-full px-3 lg:px-6 py-1 lg:py-3">
+
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.path}
+              href={link.path}
+              title={link.title}
+            />
+          ))}
+          <span className="text-gray-500 lg:text-xl">|</span>
+          <span className="text-gray-200 font-bold text-base tracking-wide">🌛</span>
         </div>
       </div>
     </nav>
+
   );
 };
 
