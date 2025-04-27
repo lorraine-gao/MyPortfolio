@@ -46,8 +46,8 @@ const AboutSection = () => {
   }
 
   return (
-    <section className="lg:py-12 mt-20 mb-20">    
-      <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-28 gap-12 ">
+    <section className="lg:py-12 mt-40 " id='about'>    
+      <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-28 gap-12 mt-30">
       
         <div className="lg:col-span-5 lg:order-1 order-2 col-span-1 place-self-center">
           <Image src="/about-image.png" alt="about"  width={450} height={450}/>

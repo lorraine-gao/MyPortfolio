@@ -21,7 +21,6 @@ const navLinks = [
 ];
 
 const NavSection = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed top-3 left-0 right-0 z-10">

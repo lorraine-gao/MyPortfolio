@@ -34,10 +34,10 @@ const ContactSection = () => {
 
 
   return (
-    <section className="grid md:grid-cols-2 my-12 py-24 gap-4">
+    <section className="grid md:grid-cols-2 my-12 py-24 mt-10 gap-4 " id='contact'>
       
       <div> 
-        <h5 className="text-4xl font-bold text-white my-5">
+        <h5 className="text-4xl font-bold text-white my-5 ">
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -53,11 +53,11 @@ const ContactSection = () => {
       </div>
 
       <div>
-          <form className="flex flex-col" onSubmit={sendEmail} ref={form}>
+          <form className="flex flex-col gap-4" onSubmit={sendEmail} ref={form}>
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
+                className="text-white block mb-2 text-base font-medium"
               >
                 Your email
               </label>
@@ -73,7 +73,7 @@ const ContactSection = () => {
             <div className="mb-6">
               <label
                 htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-white block text-base mb-2 font-medium"
               >
                 Subject
               </label>
@@ -89,7 +89,7 @@ const ContactSection = () => {
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-white block text-base mb-2 font-medium"
               >
                 Message
               </label>
@@ -102,7 +102,7 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="self-center w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg "
             >
               Send Message
             </button>
