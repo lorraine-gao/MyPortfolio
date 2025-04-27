@@ -7,8 +7,8 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 const HeroSection = () => {
   return (
-    <section className='lg:py-2 mt-25'>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-1">
+    <section className='lg:py-2 mt-45'>
+      <div className="grid grid-cols-1 lg:grid-cols-12">
 
         <div className="col-span-6 lg:col-span-7 place-self-center grid gap-3">
           <div className="text-white text-6xl lg:text-7xl font-extrabold">
