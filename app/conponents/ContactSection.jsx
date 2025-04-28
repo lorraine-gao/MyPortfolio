@@ -34,7 +34,7 @@ const ContactSection = () => {
 
 
   return (
-    <section className="grid md:grid-cols-2 my-12 py-24 mt-10 gap-4 " id='contact'>
+    <section className="grid md:grid-cols-2 my-12 py-24 md:mt-10 mt-0 gap-4 " id='contact'>
       
       <div> 
         <h5 className="text-4xl font-bold text-white my-5 ">
