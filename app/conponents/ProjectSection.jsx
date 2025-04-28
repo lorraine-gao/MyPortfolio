@@ -35,9 +35,9 @@ const projectsData = [
 
 const ProjectSection = () => {
   return (
-    <section className='lg:py-12 mt-12 mb-40 ' id='projects'>
+    <section className='lg:py-12 md:mt-12 mt-25 md:mb-40 mb-10' id='projects'>
       <h2 className='text-5xl mb-10 place-self-center mt-13'>My projects</h2>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-15'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 sm:gap-12 lg:gap-15'>
         {projectsData.map((project)=><ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.giturl} previewUrl={project.previewUrl} tech={project.tech}/>)}
       </div>
     </section>

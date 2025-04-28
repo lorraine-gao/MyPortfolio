@@ -46,7 +46,7 @@ const AboutSection = () => {
   }
 
   return (
-    <section className="lg:py-12 mt-40 " id='about'>    
+    <section className="lg:py-12 md:mt-40 mt-25 " id='about'>    
       <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-28 gap-12 mt-30">
       
         <div className="lg:col-span-5 lg:order-1 order-2 col-span-1 place-self-center">
